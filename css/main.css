@@ -189,7 +189,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #f5f5d5;
+  background: #f0f0f0;
 }
 @media (max-width: 767px) {
   body {
@@ -284,8 +284,8 @@ a {
   word-wrap: break-word;
 }
 a:hover {
-  color: #495a80;
-  border-bottom-color: #495a80;
+  color: #222;
+  border-bottom-color: #222;
 }
 blockquote {
   margin: 0;
@@ -906,7 +906,7 @@ pre .javascript .function {
   width: 1.285714285714286em;
 }
 .post-body .tabs ul.nav-tabs li.tab.active {
-  border-top: 3px solid #f39d01;
+  border-top: 3px solid #fc6423;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   background-color: #fff;
@@ -914,7 +914,7 @@ pre .javascript .function {
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab.active {
     border-top: 1px solid #ddd;
-    border-left: 3px solid #f39d01;
+    border-left: 3px solid #fc6423;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
   }
@@ -952,9 +952,9 @@ pre .javascript .function {
   line-height: 2;
 }
 .btn:hover {
-  border-color: #495a80;
+  border-color: #222;
   color: #fff;
-  background: #495a80;
+  background: #222;
 }
 .btn +.btn {
   margin: 0 0 8px 8px;
@@ -1011,7 +1011,7 @@ pre .javascript .function {
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
-  border-top-color: #495a80;
+  border-top-color: #222;
 }
 .pagination .space {
   padding: 0;
@@ -1043,7 +1043,7 @@ pre .javascript .function {
   .pagination .prev:hover,
   .pagination .next:hover,
   .pagination .page-number:hover {
-    border-bottom-color: #495a80;
+    border-bottom-color: #222;
   }
 }
 .comments {
@@ -1064,7 +1064,7 @@ pre .javascript .function {
   z-index: 1050;
   padding: 0 6px;
   width: initial;
-  background: #495a80;
+  background: #222;
   font-size: 12px;
   opacity: 0.6;
   color: #fff;
@@ -1097,7 +1097,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #495a80;
+  background: #222;
 }
 .site-meta {
   margin: 0;
@@ -1113,7 +1113,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 40px;
   color: #fff;
-  background: #495a80;
+  background: #222;
   border-bottom: none;
 }
 .brand:hover {
@@ -1211,7 +1211,7 @@ pre .javascript .function {
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
-  border-bottom-color: #495a80;
+  border-bottom-color: #222;
 }
 .menu .menu-item .fa {
   margin-right: 5px;
@@ -1432,7 +1432,7 @@ pre .javascript .function {
   border-bottom-color: #666;
 }
 .posts-collapse .post-header:hover::before {
-  background: #495a80;
+  background: #222;
 }
 .posts-collapse .post-meta {
   position: absolute;
@@ -1592,7 +1592,7 @@ pre .javascript .function {
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #495a80;
+  color: #222;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -1728,7 +1728,7 @@ pre .javascript .function {
   width: 0;
   z-index: 1040;
   box-shadow: inset 0 2px 6px #000;
-  background: #495a80;
+  background: #222;
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
@@ -1768,7 +1768,7 @@ pre .javascript .function {
   width: 14px;
   height: 14px;
   padding: 5px;
-  background: #495a80;
+  background: #222;
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
@@ -1807,7 +1807,7 @@ pre .javascript .function {
 .site-author-name {
   margin: 0;
   text-align: center;
-  color: #495a80;
+  color: #222;
   font-weight: 600;
 }
 .site-description {
@@ -1884,7 +1884,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #20c718;
+  background: #d9af2d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1922,7 +1922,7 @@ pre .javascript .function {
   color: #555;
 }
 .sidebar-nav li:hover {
-  color: #f39d01;
+  color: #fc6423;
 }
 .page-post-detail .sidebar-nav-toc {
   padding: 0 5px;
@@ -1931,11 +1931,11 @@ pre .javascript .function {
   margin-left: 10px;
 }
 .sidebar-nav .sidebar-nav-active {
-  color: #f39d01;
-  border-bottom-color: #f39d01;
+  color: #fc6423;
+  border-bottom-color: #fc6423;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #f39d01;
+  color: #fc6423;
 }
 .sidebar-panel {
   display: none;
@@ -1995,14 +1995,14 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  color: #f39d01;
-  border-bottom-color: #f39d01;
+  color: #fc6423;
+  border-bottom-color: #fc6423;
 }
 .post-toc .nav .active-current > a {
-  color: #f39d01;
+  color: #fc6423;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #f39d01;
+  color: #fc6423;
 }
 .footer {
   font-size: 14px;
@@ -2660,7 +2660,7 @@ pre .javascript .function {
   }
 }
 .page-post-detail .sidebar-toggle-line {
-  background: #f39d01;
+  background: #fc6423;
 }
 .page-post-detail .comments {
   overflow: hidden;
@@ -2770,7 +2770,7 @@ pre .javascript .function {
   float: left;
   margin-top: 300px;
   width: 240px;
-  background: #f5f5d5;
+  background: #f0f0f0;
   box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2823,7 +2823,7 @@ pre .javascript .function {
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #495a80;
+  background: #222;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -2954,7 +2954,7 @@ pre .javascript .function {
   color: #555;
 }
 .sidebar a:hover {
-  color: #495a80;
+  color: #222;
 }
 .site-state-item {
   padding: 0 10px;
@@ -2973,15 +2973,15 @@ pre .javascript .function {
 }
 .feed-link a {
   display: block;
-  color: #f39d01;
+  color: #fc6423;
   border: none;
 }
 .feed-link a:hover {
   background: none;
-  color: #c27e01;
+  color: #e34603;
 }
 .feed-link a:hover i {
-  color: #c27e01;
+  color: #e34603;
 }
 .links-of-author {
   display: flex;
@@ -3059,4 +3059,38 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+.highlight {
+  position: relative;
+}
+.btn-copy {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #333;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  padding: 2px 6px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  opacity: 0;
+}
+.btn-copy span {
+  margin-left: 5px;
+}
+.highlight:hover .btn-copy {
+  opacity: 1;
 }
