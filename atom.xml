@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>PerkyRookie&#39;s Notes</title>
+  <title>窗外蟋蟀&#39;s Blog</title>
   
   <subtitle>Quick notes</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://perkyrookie.github.io/</id>
   
   <author>
-    <name>PerkyRookie</name>
+    <name>窗外蟋蟀</name>
     
   </author>
   
