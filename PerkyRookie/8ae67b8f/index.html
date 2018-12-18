@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="C,排序算法,">
+  <meta name="keywords" content="C 排序算法,">
 
 
 
@@ -88,21 +88,21 @@
 
 
 
-<meta name="description" content="前言 希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破O(n^2^)这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。  原理希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率 但插入排序">
-<meta name="keywords" content="C,排序算法">
+<meta name="description" content="前言 希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破$O(n^2)$这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。  原理希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率 但插入排">
+<meta name="keywords" content="C 排序算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="聊聊希尔排序">
 <meta property="og:url" content="https://perkyrookie.github.io/PerkyRookie/8ae67b8f/index.html">
 <meta property="og:site_name" content="窗外蟋蟀 &#39;s Blog">
-<meta property="og:description" content="前言 希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破O(n^2^)这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。  原理希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率 但插入排序">
+<meta property="og:description" content="前言 希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破$O(n^2)$这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。  原理希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率 但插入排">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://pjs07lvwy.bkt.clouddn.com/Sorting_shellsort_anim.gif">
 <meta property="og:image" content="http://pjs07lvwy.bkt.clouddn.com/201812181616_801.png">
 <meta property="og:image" content="http://pjs07lvwy.bkt.clouddn.com/Snipaste_2018-12-18_18-41-27.png">
-<meta property="og:updated_time" content="2018-12-18T10:57:32.678Z">
+<meta property="og:updated_time" content="2018-12-18T11:01:15.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="聊聊希尔排序">
-<meta name="twitter:description" content="前言 希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破O(n^2^)这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。  原理希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率 但插入排序">
+<meta name="twitter:description" content="前言 希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破$O(n^2)$这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。  原理希尔排序是基于插入排序的以下两点性质而提出改进方法的：  插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率 但插入排">
 <meta name="twitter:image" content="http://pjs07lvwy.bkt.clouddn.com/Sorting_shellsort_anim.gif">
 
 
@@ -357,7 +357,7 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破O(n^2^)这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。</p>
+<p>希尔排序是Donald Shell于1959年提出来的一种排序算法，它是第一批突破$O(n^2)$这个时间复杂度的算法之一。大话数据结构对这个算法的讲解，我看得一知半解的，之后网上找了下资料，发现维基百科对这个算法的讲解非常不错，特在此整理一波。</p>
 </blockquote>
 <h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>希尔排序是基于插入排序的以下两点性质而提出改进方法的：</p>
 <ul>
@@ -398,7 +398,7 @@
 </ul>
 <h1 id="步长（增量）选择"><a href="#步长（增量）选择" class="headerlink" title="步长（增量）选择"></a>步长（增量）选择</h1><p>步长的选取非常关键，但是步长的选择没有统一规定，也没绝对的规律。只要满足最后一个步长为1即可。Donald Shell最初建议步长选择为$\frac {n} {2}$,虽然这样去可以比$O(n^2)$类的算法更好，但仍然有减少平均时间和最差时间的余地。维基百科给出的部分步长与最坏情况下复杂度有：</p>
 <p><img src="http://pjs07lvwy.bkt.clouddn.com/Snipaste_2018-12-18_18-41-27.png" alt=""></p>
-<p>已知的最好步长序列是由Sedgewick提出的(1, 5, 19, 41, 109,…)，该序列的项来自$9\times4^i-9\times2^i+1$和$2^{i+2}\times(2^{i+2}-3)+1$这两个算式。这项研究也表明“比较在希尔排序中是最主要的操作，而不是交换。”用这样步长序列的希尔排序比插入排序要快，甚至在小数组中比快速排序和堆排序（后续博客整理），但是在涉及大量数据时希尔排序还是比快速排序慢。</p>
+<p>已知的最好步长序列是由Sedgewick提出的(1, 5, 19, 41, 109,…)，该序列的项来自$9\times4^i-9\times2^i+1$和$2^{i+2}\times(2^{i+2}-3)+1$这两个算式。这项研究也表明“比较在希尔排序中是最主要的操作，而不是交换。”用这样步长序列的希尔排序比插入排序要快，甚至在小数组中比快速排序和堆排序（后续博客整理），但是在涉及大量数据时希尔排序还是比快速排序慢。、</p>
 
       
     </div>
@@ -432,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C-排序算法/" rel="tag"><i class="fa fa-tag"></i> C,排序算法</a>
+            <a href="/tags/C-排序算法/" rel="tag"><i class="fa fa-tag"></i> C 排序算法</a>
           
         </div>
       
@@ -532,7 +532,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
