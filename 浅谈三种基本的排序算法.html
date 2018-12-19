@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="前言 前几天读程杰老师的《大话数据结构》时，重温了一些基本的排序算法，今天就对这三个经典的排序算法（冒泡排序，简单选择排序，直接插入排序）进行一些整理，也算是对之前学习的查缺补漏吧。  冒泡排序这个算法可以说是入门所有编程语言中必学的一个排序算法。这个算法简单，较好理解，而且它能够让我们熟练掌握对循环嵌套的运用。 12 这是冒泡排序最基本的写法，">
+<meta name="description" content="&amp;#x524D;&amp;#x8A00; &amp;#x524D;&amp;#x51E0;&amp;#x5929;&amp;#x8BFB;&amp;#x7A0B;&amp;#x6770;&amp;#x8001;&amp;#x5E08;&amp;#x7684;&amp;#x300A;&amp;#x5927;&amp;#x8BDD;&amp;#x6570;&amp;#x636E;&amp;#x7ED3;&amp;#x6784;&amp;#x300B;&amp;#x65F6;&amp;#xFF0C;&amp;#x91CD;&amp;#x6E29;&amp;#x4E86;&amp;#x4E00">
 <meta name="keywords" content="C,排序算法">
 <meta property="og:type" content="website">
 <meta property="og:title" content="浅谈三种基本的排序算法（冒泡，选择，插入）">
 <meta property="og:url" content="https://perkyrookie.github.io/浅谈三种基本的排序算法.html">
 <meta property="og:site_name" content="窗外蟋蟀 &#39;s Blog">
-<meta property="og:description" content="前言 前几天读程杰老师的《大话数据结构》时，重温了一些基本的排序算法，今天就对这三个经典的排序算法（冒泡排序，简单选择排序，直接插入排序）进行一些整理，也算是对之前学习的查缺补漏吧。  冒泡排序这个算法可以说是入门所有编程语言中必学的一个排序算法。这个算法简单，较好理解，而且它能够让我们熟练掌握对循环嵌套的运用。 12 这是冒泡排序最基本的写法，">
+<meta property="og:description" content="&amp;#x524D;&amp;#x8A00; &amp;#x524D;&amp;#x51E0;&amp;#x5929;&amp;#x8BFB;&amp;#x7A0B;&amp;#x6770;&amp;#x8001;&amp;#x5E08;&amp;#x7684;&amp;#x300A;&amp;#x5927;&amp;#x8BDD;&amp;#x6570;&amp;#x636E;&amp;#x7ED3;&amp;#x6784;&amp;#x300B;&amp;#x65F6;&amp;#xFF0C;&amp;#x91CD;&amp;#x6E29;&amp;#x4E86;&amp;#x4E00">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-12-16T08:41:43.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈三种基本的排序算法（冒泡，选择，插入）">
-<meta name="twitter:description" content="前言 前几天读程杰老师的《大话数据结构》时，重温了一些基本的排序算法，今天就对这三个经典的排序算法（冒泡排序，简单选择排序，直接插入排序）进行一些整理，也算是对之前学习的查缺补漏吧。  冒泡排序这个算法可以说是入门所有编程语言中必学的一个排序算法。这个算法简单，较好理解，而且它能够让我们熟练掌握对循环嵌套的运用。 12 这是冒泡排序最基本的写法，">
+<meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00; &amp;#x524D;&amp;#x51E0;&amp;#x5929;&amp;#x8BFB;&amp;#x7A0B;&amp;#x6770;&amp;#x8001;&amp;#x5E08;&amp;#x7684;&amp;#x300A;&amp;#x5927;&amp;#x8BDD;&amp;#x6570;&amp;#x636E;&amp;#x7ED3;&amp;#x6784;&amp;#x300B;&amp;#x65F6;&amp;#xFF0C;&amp;#x91CD;&amp;#x6E29;&amp;#x4E86;&amp;#x4E00">
 
 
 
@@ -290,13 +290,31 @@
       <div class="post-body">
         
         
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>前几天读程杰老师的《大话数据结构》时，重温了一些基本的排序算法，今天就对这三个经典的排序算法（冒泡排序，简单选择排序，直接插入排序）进行一些整理，也算是对之前学习的查缺补漏吧。</p>
+          <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><blockquote>
+<p>&#x524D;&#x51E0;&#x5929;&#x8BFB;&#x7A0B;&#x6770;&#x8001;&#x5E08;&#x7684;&#x300A;&#x5927;&#x8BDD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x300B;&#x65F6;&#xFF0C;&#x91CD;&#x6E29;&#x4E86;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x5BF9;&#x8FD9;&#x4E09;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF08;&#x5192;&#x6CE1;&#x6392;&#x5E8F;&#xFF0C;&#x7B80;&#x5355;&#x9009;&#x62E9;&#x6392;&#x5E8F;&#xFF0C;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#xFF09;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x6574;&#x7406;&#xFF0C;&#x4E5F;&#x7B97;&#x662F;&#x5BF9;&#x4E4B;&#x524D;&#x5B66;&#x4E60;&#x7684;&#x67E5;&#x7F3A;&#x8865;&#x6F0F;&#x5427;&#x3002;</p>
 </blockquote>
-<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>这个算法可以说是入门所有编程语言中必学的一个排序算法。这个算法简单，较好理解，而且它能够让我们熟练掌握对循环嵌套的运用。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>这是冒泡排序最基本的写法，</p>
-
+<h2 id="&#x5192;&#x6CE1;&#x6392;&#x5E8F;"><a href="#&#x5192;&#x6CE1;&#x6392;&#x5E8F;" class="headerlink" title="&#x5192;&#x6CE1;&#x6392;&#x5E8F;"></a>&#x5192;&#x6CE1;&#x6392;&#x5E8F;</h2><p>&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x5165;&#x95E8;&#x6240;&#x6709;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x5FC5;&#x5B66;&#x7684;&#x4E00;&#x4E2A;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x7B80;&#x5355;&#xFF0C;&#x8F83;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x800C;&#x4E14;&#x5B83;&#x80FD;&#x591F;&#x8BA9;&#x6211;&#x4EEC;&#x719F;&#x7EC3;&#x638C;&#x63E1;&#x5BF9;&#x5FAA;&#x73AF;&#x5D4C;&#x5957;&#x7684;&#x8FD0;&#x7528;&#x3002;</p>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8FD9;&#x662F;&#x5192;&#x6CE1;&#x6392;&#x5E8F;&#x6700;&#x57FA;&#x672C;&#x7684;&#x5199;&#x6CD5;&#xFF0C;</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
         
       </div>
       
@@ -504,7 +522,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">| 博客全站共1.6k字</span>
+  <span class="post-count">| 博客全站共1.7k字</span>
 </div>
 
         
@@ -551,9 +569,10 @@
   
 
 
+
+
   
-
-
+  
 
 
 
@@ -595,7 +614,12 @@
 
   
   
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
   
 
 
@@ -1018,12 +1042,11 @@
 
   
   
-  <script type="text/javascript" color="0,0,255" opacity="0.7" zindex="-2" count="50" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-  
   
   <!-- ����鸴�ƹ��� -->
   <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
   <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
 
   
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":125,"height":180},"mobile":{"show":true},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":125,"height":180},"mobile":{"show":true},"log":false});</script></body>
+</html>
