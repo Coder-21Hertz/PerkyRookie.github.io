@@ -1884,7 +1884,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff1a8;
+  background: #94f61b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3094,17 +3094,6 @@ pre .javascript .function {
 .highlight:hover .btn-copy {
   opacity: 1;
 }
-.out-img-topic {
-  display: block;
-  max-height: 300px;
-  margin-bottom: 24px;
-  overflow: hidden;
-}
 img.img-topic {
-  display: block;
-  margin-left: 0.7em;
-  margin-right: 0.7em;
-  padding: 0;
-  float: right;
-  clear: right;
+  width: 100%;
 }
