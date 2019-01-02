@@ -504,6 +504,35 @@
 
 -->
 
+<section class="footer-time">
+    <span class="footer__copyright">
+    <div>
+    <span id="span_dt_dt"> </span>
+    <script language="javascript">
+      function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("6/8/2018 10:56:12");//这个日期是可以修改的
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());//其实仅仅改了这里
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span_dt_dt.innerHTML="一世长安的博客已经运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+      }
+      show_date_time();
+    </script>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</span></section>
+
 <div class="powered-by">
 <i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
   本站访问量:<span id="busuanzi_value_site_uv"></span>
@@ -1051,4 +1080,5 @@
   <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
   <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
   
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":125,"height":180},"mobile":{"show":true},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":125,"height":180},"mobile":{"show":true},"log":false});</script></body>
+</html>
