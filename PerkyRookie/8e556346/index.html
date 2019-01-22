@@ -101,7 +101,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13694807-8085b85ad16e2ff5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13694807-29b53842468555cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13694807-6b4e64f5ba39c42e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-01-22T15:14:59.653Z">
+<meta property="og:updated_time" content="2019-01-22T15:39:43.217Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构：快速排序优化思路">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/13694807-0f27d717f0478d96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -393,7 +393,7 @@
       
         <p><img src="https://upload-images.jianshu.io/upload_images/13694807-0f27d717f0478d96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <a id="more"></a>
-<blockquote>
+<h1 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h1><blockquote>
 <p>&#x65E2;&#x7136;&#x8FD9;&#x662F;&#x4E00;&#x7BC7;&#x4E3B;&#x9898;&#x601D;&#x60F3;&#x4E3A;&#x4F18;&#x5316;&#x5FEB;&#x6392;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x81EA;&#x7136;&#x5C31;&#x4E0D;&#x8BA8;&#x8BBA;&#x5173;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4E00;&#x4E9B;&#x5B9A;&#x4E49;&#x548C;&#x57FA;&#x7840;&#x6027;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x53EA;&#x8BF4;&#x5FEB;&#x6392;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x4F18;&#x5316;&#x3002;</p>
 </blockquote>
 <p><img src="https://upload-images.jianshu.io/upload_images/13694807-d4ca97b26adf4cc2.gif?imageMogr2/auto-orient/strip" alt=""></p>
@@ -494,7 +494,7 @@
   <p><span>本文标题:</span><a href="/PerkyRookie/8e556346/">数据结构：快速排序优化思路</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 窗外蟋蟀 的个人博客">窗外蟋蟀</a></p>
   <p><span>发布时间:</span>2019年01月21日 - 17:12</p>
-  <p><span>最后更新:</span>2019年01月22日 - 23:14</p>
+  <p><span>最后更新:</span>2019年01月22日 - 23:39</p>
   <p><span>原始链接:</span><a href="/PerkyRookie/8e556346/" title="数据结构：快速排序优化思路">https://perkyrookie.github.io/PerkyRookie/8e556346/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://perkyrookie.github.io/PerkyRookie/8e556346/" aria-label="复制成功！"></i></span>
   </p>
@@ -730,7 +730,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快排为什么那么快？"><span class="nav-number">1.</span> <span class="nav-text">快排为什么那么快？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#快排还能再快？"><span class="nav-number">2.</span> <span class="nav-text">快排还能再快？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何优化"><span class="nav-number">3.</span> <span class="nav-text">如何优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#对寻找枢轴的方法进行优化"><span class="nav-number">3.1.</span> <span class="nav-text">对寻找枢轴的方法进行优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三数取中："><span class="nav-number">3.1.1.</span> <span class="nav-text">三数取中：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小数组使用插入排序"><span class="nav-number">3.2.</span> <span class="nav-text">小数组使用插入排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三向切分思想"><span class="nav-number">3.3.</span> <span class="nav-text">三向切分思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#递归优化"><span class="nav-number">3.4.</span> <span class="nav-text">递归优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#尾递归"><span class="nav-number">3.4.1.</span> <span class="nav-text">尾递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#所谓的“快排尾递归优化”真的是尾递归优化吗？"><span class="nav-number">3.4.2.</span> <span class="nav-text">所谓的“快排尾递归优化”真的是尾递归优化吗？</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#快排为什么那么快？"><span class="nav-number">2.</span> <span class="nav-text">快排为什么那么快？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#快排还能再快？"><span class="nav-number">3.</span> <span class="nav-text">快排还能再快？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何优化"><span class="nav-number">4.</span> <span class="nav-text">如何优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#对寻找枢轴的方法进行优化"><span class="nav-number">4.1.</span> <span class="nav-text">对寻找枢轴的方法进行优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三数取中："><span class="nav-number">4.1.1.</span> <span class="nav-text">三数取中：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小数组使用插入排序"><span class="nav-number">4.2.</span> <span class="nav-text">小数组使用插入排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三向切分思想"><span class="nav-number">4.3.</span> <span class="nav-text">三向切分思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#递归优化"><span class="nav-number">4.4.</span> <span class="nav-text">递归优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#尾递归"><span class="nav-number">4.4.1.</span> <span class="nav-text">尾递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#所谓的“快排尾递归优化”真的是尾递归优化吗？"><span class="nav-number">4.4.2.</span> <span class="nav-text">所谓的“快排尾递归优化”真的是尾递归优化吗？</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1399,4 +1399,5 @@
   <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
   <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
   
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":125,"height":180},"mobile":{"show":true},"log":false});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"right","width":125,"height":180},"mobile":{"show":true},"log":false});</script></body>
+</html>
